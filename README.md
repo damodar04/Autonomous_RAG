@@ -1,274 +1,150 @@
-🚀 AI Clinical Trials Architect
-Autonomous Multi-Agent RAG System for Protocol Design & Feasibility Analysis
+# 🧪 AI Clinical Trials Architect  
+### Autonomous Multi-Agent RAG System for Protocol Design, Evaluation & Feasibility Analysis  
 
-⭐ Overview
+![Banner Placeholder](./assets/banner.png)
 
-The AI Clinical Trials Architect is an end-to-end autonomous system that designs, evaluates, and optimizes clinical trial protocols using:
+The **AI Clinical Trials Architect** is a next-generation, autonomous **RAG-powered** system designed to draft, evaluate, and optimize clinical trial protocols.
 
-Autonomous RAG (Retrieval-Augmented Generation)
+It combines:
 
-Multi-Agent collaboration
+- 🤖 Multi-agent LLM reasoning  
+- 📚 Retrieval-Augmented Generation (RAG)  
+- 🏛️ FDA & Ethics guideline validation  
+- 🧬 Real patient feasibility using the MIMIC-III dataset  
+- 🧠 Autonomous self-improvement loop  
+- 🖥️ A clean, professional Streamlit interface  
 
-Real-world patient data (MIMIC-III)
+---
 
-DeepSeek LLMs
+# 🔍 Table of Contents
+- [🌟 Project Summary](#-project-summary)  
+- [🎯 Why This Project Exists](#-why-this-project-exists)  
+- [🧱 Architecture Overview](#-architecture-overview)  
+- [🧠 What Is RAG?](#-what-is-rag)  
+- [🤖 What Is Autonomous RAG?](#-what-is-autonomous-rag)  
+- [📐 System Design](#-system-design)  
+- [✨ Key Features](#-key-features)  
+- [⚙️ Installation](#️-installation)  
+- [🚀 Running the App](#-running-the-app)  
+- [📂 Project Structure](#-project-structure)  
+- [🧪 Trial Designer](#-trial-designer)  
+- [⚖️ Protocol Evaluator](#️-protocol-evaluator)  
+- [🏥 MIMIC Analytics](#-mimic-analytics)  
+- [🧠 Autonomous Self-Improvement Loop](#-autonomous-self-improvement-loop)  
+- [😄 A Bit of Humor](#-a-bit-of-humor)  
+- [📜 License](#-license)
 
-FAISS vector search
+---
 
-DuckDB SQL analytics
+# 🌟 Project Summary
 
-This system behaves like a virtual clinical research team:
-Medical researcher, FDA specialist, ethics officer, cohort analyst, protocol writer, and even a director-level evaluator — all working together.
+The **AI Clinical Trials Architect** is an end-to-end system that:
 
-Also, it's polite. Usually.
-(Unless you ask it to violate FDA guidelines — then it becomes a responsible adult.)
+- Designs clinical trial protocols  
+- Retrieves scientific + regulatory + ethical evidence  
+- Evaluates protocol quality  
+- Checks feasibility via patient-level SQL queries  
+- Improves itself automatically  
 
-🎯 Why This Project Exists
+This system behaves like a **virtual junior clinical research scientist** — minus coffee breaks, mood swings, and meetings that should've been emails.
 
-Protocol development is traditionally:
+---
 
-❌ Slow
-❌ Manual
-❌ Fragmented across teams
-❌ Prone to regulatory and ethical mistakes
+# 🎯 Why This Project Exists
 
-Autonomous RAG makes everything:
+Clinical trial design traditionally requires:
 
-✅ Faster
-✅ Evidence-backed
-✅ More accurate
-✅ Self-improving
+- Literature review  
+- Regulatory compliance checks  
+- Ethical validation  
+- Patient feasibility analysis  
+- Protocol drafting  
+- Endless revisions  
 
-🧬 Key Features
-🔹 1. Multi-Agent Architecture
+➡️ **This system automates 70–80% of that workflow.**  
 
-Planner
+The result:  
+⏳ Faster timelines  
+🧬 Evidence-backed designs  
+🧠 Fewer human errors  
+🛡️ Higher regulatory confidence  
 
-Medical Research Retriever
+---
 
-Regulatory (FDA) Specialist
+# 🧠 What Is RAG?
 
-Ethics Specialist
+**Retrieval-Augmented Generation**  
+A simple, powerful cycle:
 
-SQL Cohort Analyst
 
-Protocol Synthesizer
+RAG ensures the AI does not hallucinate medical nonsense like:
 
-Director Reasoner (Evaluation)
+> “Dose the patient with 500mg of oxygen.”  
+(Yes, models without RAG really say stuff like this.)
 
-🔹 2. RAG-Powered Knowledge Integration
+---
 
-PubMed literature
+# 🤖 What Is Autonomous RAG?
 
-FDA guidelines (PDF + TXT)
+If RAG is a “student who reads before answering,”  
+**Autonomous RAG is a student who reads, answers, grades their work, fixes mistakes, and improves every iteration.**
 
-Ethics / Belmont Report
+It adds:
 
-Structured patient data (MIMIC)
+- Multi-agent reasoning  
+- Evaluation engine  
+- Diagnostician  
+- SOP-evolution agent  
 
-🔹 3. Autonomous Evolution Loop
 
-Each generated protocol is auto-evaluated across:
+---
 
-Scientific Rigor
+# ✨ Key Features
 
-Regulatory Compliance
+### **🧪 1. Clinical Trial Designer (Enhanced Inputs)**
+Structured fields for:
 
-Ethical Soundness
+- Drug name, class  
+- Dose (mg), frequency  
+- Route (Oral/IV/SubQ)  
+- Comparator  
+- Randomization  
+- Blinding  
+- Endpoints  
+- Safety monitoring  
 
-Feasibility
+### **⚖️ 2. Protocol Evaluator**  
+Scores on 5 medical-grade metrics:
 
-Patient Centricity
+- Scientific Rigor  
+- Regulatory Compliance  
+- Ethics  
+- Feasibility  
+- Patient Centricity  
 
-System then improves itself in the next iteration.
+Includes a radar chart.
 
-🔹 4. Clinical Trial Designer UI
+### **🧬 3. MIMIC Real-World Patient Analytics**  
+- SQL execution  
+- Automated SQL generation via LLM  
+- Cohort feasibility analysis  
 
-Users can specify:
+### **🧠 4. Autonomous Self-Improving Loop**  
+System learns from its mistakes.
 
-Drug Name
+### **🧰 5. Knowledge Base Search**  
+Search PubMed, FDA, Ethics documents in one click.
 
-Dose (mg)
+---
 
-Frequency
+# ⚙️ Installation
 
-Route
-
-Comparator
-
-Arms, Blinding, Randomization
-
-Primary/Secondary Endpoints
-
-Safety parameters
-
-🔹 5. MIMIC-III Powered Feasibility
-
-Real patient data → recruitment feasibility → more realistic trials.
-
-🔹 6. Full Streamlit Interface
-
-Dark theme removed.
-Now clean, medical-grade white UI.
-
-🧠 Architecture Diagram
-
-Or ASCII view:
-
-User
-  ↓
-Planner Agent
-  ↓
-──────────────────────────────────────────────
-|  PubMed Retriever   → Evidence              |
-|  FDA Retriever      → Compliance            |
-|  Ethics Retriever   → Ethics                |
-|  SQL Cohort Agent   → Real patient data     |
-──────────────────────────────────────────────
-                  ↓
-          Synthesizer Agent
-                  ↓
-        ┌──────────────────────┐
-        │  Protocol Draft      │
-        └──────────────────────┘
-                  ↓
-          Evaluation Engine
-                  ↓
-         Diagnostic + SOP Fixer
-                  ↓
-   Self-Improved Protocol Next Round
-
-⚙️ Technical Stack
-Component	Tech
-LLMs	DeepSeek Chat, DeepSeek Reasoner
-Framework	LangChain + Multi-Agent LangGraph (optional)
-Embeddings	HuggingFace MiniLM / TF-IDF fallback
-Vector DB	FAISS
-Backend DB	DuckDB (for MIMIC)
-Frontend	Streamlit
-Visualizations	Plotly
-Knowledge Sources	PubMed, FDA, Ethics, MIMIC
-📁 Project Structure
-/project-root
-│
-├── clinical_trials_app.py     # Main Streamlit app
-├── data/
-│   ├── pubmed_articles/
-│   ├── fda_guidelines/
-│   ├── ethical_guidelines/
-│   └── mimic_db/
-│
-├── embeddings/                # Vector store cache
-├── docs/                      # Procedure docs, SOP
-└── README.md                  # You are reading me
-
-🛠️ Installation & Setup
-1. Clone repo
-git clone https://github.com/yourusername/clinical-trials-architect.git
+```bash
+git clone https://github.com/damodar04/clinical-trials-architect
 cd clinical-trials-architect
 
-2. Install dependencies
 pip install -r requirements.txt
 
-3. Add .env
-DEEPSEEK_API_KEY=your_key_here
 
-4. Run the app
-streamlit run clinical_trials_app.py
+---
 
-🚀 How It Works
-Step 1 — Initialize System
-
-Loads models (DeepSeek Chat & Reasoner) + embeddings.
-
-Step 2 — Load Knowledge Base
-
-Indexes all PubMed, FDA, Ethics documents into FAISS.
-
-Step 3 — Load MIMIC
-
-Loads patient demographics + ICD diagnoses.
-
-Step 4 — Design a Trial
-
-Fill form → drug name → dose → endpoints → generate protocol.
-
-Step 5 — Evaluation
-
-System auto-grades your protocol and visualizes quality.
-
-Step 6 — Feasibility Check
-
-Filter real patients based on inclusion/exclusion.
-
-😂 Why Autonomous RAG is Like a Big Brain Team
-
-Think of it like the Avengers:
-
-PubMed Agent = Doctor Strange (sees all knowledge)
-
-FDA Agent = Captain America (follows rules)
-
-Ethics Agent = Vision (moral compass)
-
-SQL Agent = Iron Man (data & analytics)
-
-Synthesizer = Nick Fury (brings it all together)
-
-Director Agent = The One Above All
-
-Together, they save clinical trials from becoming disasters.
-
-🧪 Technical Deep Dive for Engineers
-Vector Pipeline
-
-Text → Chunk → Embedding → FAISS Index → Retriever
-
-Autonomous Loop
-
-LLM → Draft → Evaluate → Reflection → SOP Mutation → Re-run
-
-Cohort SQL Generation
-
-Natural language → SQL → DuckDB → DataFrame → Insights
-
-LLM Routing
-
-Planner → Domain Agent → Synthesizer → Evaluator → Director.
-
-Optimizations
-
-TF-IDF fallback for offline RAG
-
-Chunk overlap tuning (100–150 chars)
-
-Temperature controls for deterministic outputs
-
-Error-handling for PDF fallbacks
-
-🧭 Roadmap
-
- Dose recommendation engine
-
- Automatic sample size estimation
-
- Multi-country site feasibility
-
- Auto-generate CONSORT-compliant diagrams
-
- Real-time clinical trial monitoring
-
- Multi-agent LangGraph rewrite
-
-🤝 Contributing
-
-Pull requests welcome!
-Especially if you’re from pharma, clinical ops, or AI engineering.
-
-⭐ Like this project?
-
-Give it a ⭐ on GitHub — it helps a lot.
-
-📬 Need Help?
-
-Open an Issue or email damodar.7974@gmail.com
