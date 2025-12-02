@@ -1,7 +1,6 @@
 # 🧪 AI Clinical Trials Architect  
 ### Autonomous Multi-Agent RAG System for Protocol Design, Evaluation & Feasibility Analysis  
 
-![Banner Placeholder](./assets/banner.png)
 
 The **AI Clinical Trials Architect** is a next-generation, autonomous **RAG-powered** system designed to draft, evaluate, and optimize clinical trial protocols.
 
@@ -35,7 +34,21 @@ It combines:
 - [📜 License](#-license)
 
 ---
+## **Autonomous Multi-Agent Architecture**
 
+### Agents:
+| Agent | Role |
+|-------|------|
+| Planner | Breaks query into tasks |
+| Researcher | PubMed RAG |
+| Regulatory Specialist | FDA RAG |
+| Ethics Specialist | Ethics RAG |
+| SQL Coder | MIMIC SQL query generation |
+| Cohort Analyst | Real-world feasibility |
+| Synthesizer | Writes protocol |
+| Evaluator | 5D scoring |
+| Diagnostician | Identifies weakest dimension |
+| Evolution Architect | Self-improvement engine |
 # 🌟 Project Summary
 
 The **AI Clinical Trials Architect** is an end-to-end system that:
